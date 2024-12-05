@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroservgestaodepessoasApplication<microservgestaodepessoas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.univille.microservgestaodepessoas.MicroservgestaodepessoasApplication",
+            "projectName": "microservgestaodepessoas",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": ["-Djavax.net.ssl.trustStore=/workspaces/tapr-2024-turmab-gestaodepessoas-java/native.jks",
+            "-Djavax.net.ssl.trustStorePassword=univille"]
+        }
+    ]
+}

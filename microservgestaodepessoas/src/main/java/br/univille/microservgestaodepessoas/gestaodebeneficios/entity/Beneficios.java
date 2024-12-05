@@ -2,8 +2,19 @@ package br.univille.microservgestaodepessoas.gestaodebeneficios.entity;
 
 import java.util.UUID;
 
+import org.springframework.data.annotation.Id;
+
+import com.azure.core.annotation.Generated;
+import com.azure.spring.data.cosmos.core.mapping.Container;
+import com.azure.spring.data.cosmos.core.mapping.GeneratedValue;
+import com.azure.spring.data.cosmos.core.mapping.PartitionKey;
+
+@Container(containerName = "beneficios", autoCreateContainer = true)
 public class Beneficios {
 
+    @Id
+    @PartitionKey
+    @GeneratedValue
     private UUID id;
     private float valeTransporte;
     private float valeRefeicao;
